@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>How IntelliJ TODO tool helps in Refactoring | Harshit Rathod</title>
+	<meta name="description" content="Every developer needs to perform refactoring in his Professional career. You need Refactoring when you feel your code is not maintainable or scalable. With c...">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/img/avatar_v1.png" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/2017/12/09/how-intellij-todo-tool-helps-in-refactoring.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Harshit Rathod" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/avatar_v1.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">Harshit Rathod</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/tags.html">
+					tags
+				</a>
+			</li>
+			
+			
+			<!-- Social icons from Font Awesome, if enabled  -->
+			
+
+
+<li>
+	<a href="mailto:harshitrathodddu@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://www.facebook.com/harshit.rathod.cool" title="Follow on Facebook">
+		<i class="fa fa-fw fa-facebook"></i>
+	</a>
+</li>
+
+
+
+
+
+<li>
+	<a href="https://github.com/harshitrathod" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/harshit-rathod-068894bb/" title="Follow on LinkedIn">
+		<i class="fa fa-fw fa-linkedin"></i>
+	</a>
+</li>
+
+
+
+
+
+<li>
+	<a href="https://www.reddit.com/user/harshitrathod" title="Follow on Reddit">
+		<i class="fa fa-fw fa-reddit"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/Harshit__Rathod" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+            
+            <!-- Search bar -->
+            
+            <li>
+            <form action="/search.html" method="get">
+                <input type="text" id="search-box" name="query" placeholder="Search" class="">
+                <button type="submit" class="">
+                    <i class="fa fa-fw fa-search"></i>
+                </button>
+            </form>
+            </li>
+            
+		</ul>
+	</nav>
+    
+</header>
+
+    <div class="content">
+      <article class="feature-image">
+  <header style="background-image: url('/assets/img/intellij-todo/bg.png')">
+    <h1 class="title">How IntelliJ TODO tool helps in Refactoring</h1>
+    
+    <p class="meta">
+      December 9, 2017
+       - Harshit Rathod
+    </p>
+  </header>
+  <section class="post-content"><p>Every developer needs to perform refactoring in his Professional career. You need Refactoring when you feel your code is not maintainable or scalable. With complex design some time is it very hard to develop a new feature and refactoring is essential. Refactoring is a very critical task because it can open a door for bugs.</p>
+
+<p>When I start refactoring, the first thing I do is analyze entire code end to end. I will not code utile I get a good understanding of impact. When I am going through the code I need a way to add comments to a line or method level. This is where IntelliJ TODO tool helps.</p>
+
+<h3 id="what-is-intellij-todo-tool"><strong>What is IntelliJ TODO tool?</strong></h3>
+
+<p>It’s tool window where you can able to refer all comment which you mentioned in your Tool pattern setting. IntelliJ is continuous scanning project for this TODO pattern and when the pattern matches, display comment on tool window. By default, IntelliJ have two TODO pattern <strong>//TODO</strong> and <strong>//FixMe</strong>.  These matches any comment Starting with <strong>//TODO</strong> and <strong>//FixMe</strong></p>
+
+<p>To see all your TODO comments open TODO tool windows from <strong>View -&gt; Tool Windows -&gt; TODO or (Alt + 6)</strong></p>
+
+<p class="center"><img src="/assets/img/intellij-todo/todo1.png" alt="TODO Tool window" /></p>
+
+<p>You have all your TODO Comment displayed over here. You have 3 option to limit your scope. It means if you select “Project” scope, scan happens on all project files. For more information, you can refer: <a href="https://www.jetbrains.com/help/idea/todo-tool-window.html">TODO tool Window</a></p>
+
+<p> </p>
+
+<h3 id="how-to-create-custom-todo-pattern">How to create Custom TODO pattern?</h3>
+
+<p>You can define your own TODO pattern in IntelliJ.Once you add this pattern, IntelliJ scan for this pattern and display matching items in IntelliJ tool window.  Go to <strong>Setting -&gt; Editor -&gt; TODO </strong>for adding new pattern</p>
+
+<p class="center"><img src="/assets/img/intellij-todo/todo2.png" alt="Add TODO pattern" /></p>
+
+<p>As you can see we have 2 default pattern already configured. Click on Plus Icon to add new Pattern</p>
+
+<p class="center"><img src="/assets/img/intellij-todo/todo3.png" alt="Add new TODO Pattern" /></p>
+
+<p>You need to define Your pattern here. I have configured <strong>\bhello\b.* </strong>which will map all comment starting from hello. You can use <a href="https://www.jetbrains.com/help/idea/regular-expression-syntax-reference.html">Regular Expression Syntax Reference</a> To define Your Pattern. You can also change the color scheme of comment also. After saving changes you can able to see all your comment starting with <strong>Hello </strong>in TODO tool Window</p>
+
+<p class="center"><img src="/assets/img/intellij-todo/todo4.png" alt="View custom TODO comment" /></p>
+
+<h3 id="todo-comment-with-refactoring-">TODO comment with Refactoring :</h3>
+
+<p>Now we know how to add TODO pattern we can use it in our refactoring. When I start Refactoring I have one JIRA Id for a task. I will create one TODO pattern with this Id. For example, I have 1245 as Jira Id so I create a pattern like <strong>\b1245\b.*.  </strong>After this, I will start my code analysis and when I need to add some points I will add a comment with 1245 in a prefix. Now I can see all comments in TODO tool window.</p>
+
+<p>In a large project, It is possible that you have so many TODO comments. Finding particular comment will become a pain in such situations. You can create your TODO filter so that Only specific comments will be filtered.</p>
+
+<h3 id="create-todo-filter">Create TODO Filter:</h3>
+
+<p>Go to <strong>Setting -&gt; Editor -&gt; TODO </strong>and click plus to add a filter.</p>
+
+<p class="center"><img src="/assets/img/intellij-todo/todo5.png" alt="Add TODO filter" /></p>
+
+<p>Select Pattern which will be included in this filter and save changes. Now on TODO tool window open filter menu.<img src="/assets/img/intellij-todo/todo6.png" alt="" /> Select Your filter and your all comment will be filtered by selected pattern.</p>
+
+<p>Now I have all my comment filtered, I can work on my code to resolve it. Now It’s easy to go to impacted code through TODO tool. I also can track how much work is pending by a number of comments in TODO tool window.</p>
+
+<p>When I am done with refactoring and committing my code, I can select  “<strong>Check TODO</strong>” options in my “<strong>Before Commit”</strong> section. What it will do is scan all files and check if any TODO item is pending or not. You can also apply a filter to scan particular pattern.</p>
+
+<p class="center"><img src="/assets/img/intellij-todo/todo7.png" alt="Scan TODO while Commit" /></p>
+
+<h3 id="conclusion">Conclusion:</h3>
+
+<p>I developed this technique over the time while working on many refactoring tasks. This is like creating my refactoring checklist which tracks my progress. By doing this systematically we can reduce the probability of bugs.</p>
+
+<p>I am happy to have some feedback to improve this technique further</p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#IntelliJ">#IntelliJ</a>
+    
+    <a class="tag" href="/tags#Refactoring">#Refactoring</a>
+    
+  </div>
+</footer>
+
+
+</article>
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'harshitrathod';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view comments.</noscript>
+
+</div>
+
+
+<!-- Post navigation -->
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Harshit Rathod © 2017. All Rights Reserved.</p>
+</footer>
+
+
+  </body>
+</html>
